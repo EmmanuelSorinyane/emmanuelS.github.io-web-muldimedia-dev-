@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Feedback</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oleo+Script+Swash+Caps&family=Poppins:ital,wght@1,100&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <doctype!html>
+
+            <img src="images/new logo 2.png" class=logo >
+            <div id="sideNav">
+                <nav>
+                   <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="now showing.html">Now Showing</a></li>
+                    <li><a href="up coming.html">Upcoming</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                   
+                    </ul>   
+                </nav> 
+    
+            </div>
+            <div id="menu-btn">
+                <img src="images/menu - Copy.png" id="menu">
+            </div>
+            <script>
+                var menubtn = document.getElementById("menu-btn")
+                var sideNav = document.getElementById("sideNav")
+                var menu = document.getElementById("menu")
+                
+                sideNav.style.right="-250px";
+    
+                menubtn.onclick=function(){
+                    if(sideNav.style.right=="-250px"){
+                       sideNav.style.right = "0";
+                       menu.src="images/close.png";
+                }
+                else {sideNav.style.right="-250px";
+                menu.src="images/menu - Copy.png";
+            }
+        }
+            </script>
+
+          <div class="feedback-title">
+              <h1>Feedback</h1>
+              <h2>Please submit review</h2>
+
+          </div>
+
+          <div class="feedback-form">
+              <form id="feedback-form" method="post" action="">
+                  <input name="name" type="text" class="form-control" placeholder=" Your Name" required>
+                  <br>
+                  <input name="email" type="email" class="form-control" placeholder=" Your Email" required>
+                  <br>
+
+                  <textarea name="message" class="form-control" placeholder="Feedback" row="4" required>
+
+                  </textarea><br>
+
+                  <input type="Submit" class="form-control submit" value="Submit Feedback">
+
+
+
+
+              </form>
+
+
+
+
+
+          </div>
+
+
+
+
+          </div>
+            
+            <footer class="footer">
+                <h1>About Us</h1>
+                <p1>WaSekeiCinematics is a proudly Motswana owned movie theatre established in 1999 by a veteran movie and cinema enthusiast hence the name "Wa Sekei" meaning ancient Motswana. </p>
+            
+                    <div class="contactUs-btn">
+                        
+                        <a href="contact us.html"><span></span> Contact Us</a>
+                    
+                </div> 
+            
+             
+            
+            
+            
+            </footer>   
+            
+
+
+
+
+        </doctype>
+    </body>
+
+
+
+</html>
